@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: lighter;
+    }
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(images/home05.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+
+nav {
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    }
+
+nav img {
+    width: 300px;
+    }
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    }
+    
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    }
+
+.nav-links ul li::after {
+    content: ''; 
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    }
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+        
+.text-box h1 {
+    font-size: 68px;
+    font-family: 'Rubik Spray Paint';
+    font-weight: lighter;
+    }
+        
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Averia Sans Libre', cursive;
+    }
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Rubik Vinyl', cursive;
+    }
+
+.hero-btn:hover {
+    border: 1px solid #fff;
+    color: #000000;
+    background: #fff;
+    transition: 1s;
+    }
+
+/*----- 2nd section -----*/
+
+body {
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+.preview {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to bottom, #333333, #ffffff 60%);
+    }
+  
+.preview h1 {
+    font-size: 60px;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Rubik Spray Paint';
+    }
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    }  
+  
+.carousel__images {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    }
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+    }
+  
+.carousel__images img {
+    height: 800px;
+    object-fit: cover;
+    user-select: none;
+    margin-right: 14px;
+    }
+  
+.carousel__images img:last-child {
+    margin-right: 0;
+    }
+  
+.preview-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #333333 40%, #ffffff 60%);
+    opacity: 0.8;
+    z-index: -1;
+    }
+
+.two-btn {
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Rubik Vinyl', cursive;
+    }
+    
+.two-btn:hover {
+    border: 1px solid #000000;
+    color: #ffffff;
+    background: #000000;
+    transition: 1s;
+    }
+  
+/*----- 3rd section -----*/
+
+.request {
+    width: 100%;
+    margin-top: 8%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ffffff;
+    }
+      
+.request .boxed {
+    background-color: #000000;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+      
+.request h1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-left: 7%;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Rubik Mono One', sans-serif;
+    }
+      
+.request .three-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 40px;
+    background: transparent;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-family: 'Rubik Vinyl', cursive;
+    }
+      
+.request .three-btn:hover {
+    border: 1px solid #ffffff;
+    color: #000000;
+    background: #ffffff;
+    transition: 1s;
+    }
+      
+/*----- ARTIST BIO -----*/
+
+.text-box03 {
+    width: 90%;
+    color: #fff;
+    background-color: #000000;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    margin-left: 20px;
+    }
+  
+.text-box03 h1 {
+    font-size: 68px;
+    font-family: 'Rubik Spray Paint';
+    font-weight: lighter;
+    padding: 3%;
+    }
+  
+.text-box03 p {
+    margin: 10px 0 0;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Averia Sans Libre', cursive;
+    padding: 3%;
+    }
+  
+.social-icons {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    }
+  
+.social-icons .social-icon {
+    margin-left: 10px;
+    filter: invert(100%);
+    }
+  
+  /*----- CONTACT ME -----*/
+  
+.container {
+    background-color: #000000;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    }
+  
+.container h1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    margin-top: 7%;
+    }
+  
+.form-container {
+    background-color: #000000;
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    }
+  
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #ffffff;
+    }
+  
+.form-container input[type="submit"] {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    margin-left: auto;
+    cursor: pointer;
+    font-family: 'Rubik Vinyl', cursive;
+    }
+  
+.form-container input[type="submit"]:hover {
+    border: 1px solid #ffffff;
+    color: #000000;
+    background: #ffffff;
+    transition: 1s;
+    }
+  
+.error-message {
+  color: red;
+    }
+  
+
+/*----- ARTWORKS -----*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    }
+  
+.gallery img {
+    padding-top: 3%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
